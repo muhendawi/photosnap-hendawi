@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+/* ------------------------------ */
+/* Custom Properties */
+/* ------------------------------ */
+:root {
+  /* Colors */
+  --main-accent-1: hsl(28 100% 79%);
+  --main-accent-2: hsl(329 36% 59%);
+  --main-accent-3: hsl(229 100% 67%);
+  --black: hsl(0 0% 0%);
+  --grey: rgb(223, 223, 223);
+  --grey2: #535353;
+  --white: hsl(0 0% 100%);
+  /* Font-family */
+  --main-font: "DM Sans", sans-serif;
+  /* Font-sizes */
+  --h4-fs: 0.75rem;
+  --body-fs: 0.9375rem;
+  --h3-fs: 1.125rem;
+  --h2-fs: 1.5rem;
+  --h1-fs: 2.5rem;
+  /* Font-sizes line-heights */
+  --h4-lh: 1.3;
+  --body-h3-h2-lh: 1.6;
+  --h1-lh: 1.2;
+  /* Letter spacing */
+  --h4-ls: 2px;
+  --h1-ls: 4.17px;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* border: 1px solid salmon; */
+}
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  font-family: var(--main-font);
+  min-height: 100vh;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* -------------------- Colors Section --------------------- */

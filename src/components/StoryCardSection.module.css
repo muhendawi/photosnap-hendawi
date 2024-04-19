@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+@media (max-width: 1070px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  /* .card {
+    min-width: 25em;
+  } */
+}

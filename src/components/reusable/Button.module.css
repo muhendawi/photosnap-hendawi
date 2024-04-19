@@ -1,0 +1,57 @@
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  padding: 0;
+  margin: 0;
+}
+
+/* Shared ----------------------------------------*/
+.btn button {
+  border: none;
+  text-transform: uppercase;
+  padding: 0.8em 2em;
+  font-size: var(--h4-fs);
+  font-weight: bold;
+  cursor: pointer;
+  background-color: transparent;
+  letter-spacing: var(--h4-ls);
+  text-wrap: nowrap;
+}
+
+.hover:hover {
+  margin-right: -15px;
+  gap: 26.2px;
+}
+/* Black button ----------------------------------- */
+.btn .black-btn {
+  background-color: var(--black);
+  color: var(--white);
+}
+.black-btn:hover {
+  background-color: var(--grey);
+  color: var(--black);
+}
+
+/* White button ----------------------------------- */
+.btn .white-btn {
+  background-color: var(--white);
+  color: var(--black);
+}
+.btn .white-btn:hover {
+  background-color: var(--grey);
+}
+
+/* transparent onWhite --------------------------------- */
+.transparent-onWhite-btn {
+  color: var(--black);
+}
+
+/* transparent onBlack --------------------------------- */
+.transparent-onBlack-btn {
+  color: var(--white);
+}
+.transparent-onWhite-btn:hover,
+.transparent-onBlack-btn:hover {
+  text-decoration: underline;
+}

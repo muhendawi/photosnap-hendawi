@@ -1,0 +1,122 @@
+.shared {
+  display: flex;
+  align-items: stretch;
+  color: var(--black);
+  height: 40em;
+}
+
+.sharedText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 4em;
+  flex: 0 0 35%;
+  min-width: 30rem;
+}
+.sharedText h1 {
+  font-size: var(--h1-fs);
+  line-height: var(--h1-lh);
+  text-transform: uppercase;
+  letter-spacing: var(--h1-ls);
+}
+
+.imageContainer {
+  flex: 1 0 25em;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shared button {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* the next div div rule for aligning the button and the arrow next to each other */
+.sharedText div {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+}
+
+/* The next rule is for setting the font characterstics for the section body text */
+.shared div p {
+  font-weight: 400;
+  color: var(--grey2);
+  font-size: var(--body-fs);
+  line-height: var(--body-h3-h2-lh);
+  font-weight: 300;
+}
+
+/* The next class to reverse the direction of only the flex items
+that equivalant to the odd indexes */
+.reverseRow {
+  flex-direction: row-reverse;
+}
+
+/* The next class for the section that have text with black 
+background */
+.blackSection {
+  position: relative;
+  background-color: var(--black);
+  color: var(--white);
+}
+.blackSection .blackBody {
+  color: var(--grey);
+}
+.blackSection::before {
+  position: absolute;
+  content: "";
+  top: 30%;
+  left: 0;
+  height: 45%;
+  width: 0.4em;
+  background: linear-gradient(
+    to bottom,
+    var(--main-accent-3) 5%,
+    var(--main-accent-2) 45%,
+    var(--main-accent-1) 90%
+  );
+}
+
+@media (max-width: 723px) {
+  .shared {
+    flex-direction: column;
+    height: inherit;
+  }
+  .sharedText {
+    order: 1;
+    /* flex: 0 0 24em; */
+    padding: 4em 2em;
+    min-width: 0;
+    /* height: 30em; */
+  }
+  .imageContainer {
+    flex: 0 0 18em;
+  }
+  .sharedText h1 {
+    font-size: calc(var(--h1-fs) - 0.5rem);
+  }
+  .reverseRow {
+    flex-direction: column;
+  }
+  .blackSection::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 10%;
+    height: 0.3em;
+    width: 25%;
+    background: linear-gradient(
+      to left,
+      var(--main-accent-3) 5%,
+      var(--main-accent-2) 45%,
+      var(--main-accent-1) 90%
+    );
+  }
+}

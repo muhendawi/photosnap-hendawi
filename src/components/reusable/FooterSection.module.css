@@ -1,0 +1,128 @@
+.footer {
+  background-color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vw 7vw;
+  height: 17.5em;
+}
+
+.navAndSocials {
+  /* border: 1px solid salmon; */
+  position: relative;
+  display: flex;
+}
+
+.navLinks ul {
+  /* border: 1px solid salmon; */
+  position: absolute;
+  right: -15vw;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+}
+
+.navLinks a:link,
+.navLinks a:visited {
+  /* border: 1px solid salmon; */
+  text-transform: uppercase;
+  font-size: var(--h4-fs);
+  letter-spacing: var(--h4-ls);
+  font-weight: 600;
+  padding: 0.3em;
+  text-decoration: none;
+  color: var(--grey);
+  text-transform: uppercase;
+}
+
+.navLinks a:global(.active),
+.navLinks a:hover {
+  color: var(--grey2);
+}
+
+.logos {
+  /* border: 1px solid salmon; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8em;
+  /* align-items: flex-start; */
+}
+
+.logos ul {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid salmon; */
+  display: flex;
+  gap: 1em;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  gap: 6.5em;
+}
+.copyright p {
+  font-size: var(--body-fs);
+  color: var(--grey2);
+  text-align: center;
+}
+/* The button styling part */
+.btnAndArrow button {
+  padding-left: 0;
+  padding-right: 0;
+  /* position: relative; */
+  color: var(--grey);
+}
+.btnAndArrow {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  align-self: flex-end;
+}
+
+@media (max-width: 1070px) {
+  .navLinks ul {
+    right: 0;
+    left: 0;
+    top: 30%;
+    flex-direction: row;
+    gap: 1.3em;
+  }
+  .navLinks a:link,
+  .navLinks a:visited {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 838px) {
+  .footer {
+    flex-direction: column;
+    min-height: 35em;
+    padding: 4em 6em;
+  }
+  .navAndSocials {
+    flex-direction: column;
+    gap: 4em;
+  }
+  .logos {
+    gap: 2em;
+  }
+  .navLinks ul {
+    /* border: 1px solid salmon; */
+    position: initial;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2em;
+  }
+  .copyright {
+    gap: 0.3em;
+    /* align-items: center; */
+  }
+  .btnAndArrow {
+    align-self: center;
+  }
+}

@@ -1,0 +1,31 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 18em;
+  max-width: 27em;
+  gap: 0.4em;
+  /* border: 1px solid salmon; */
+}
+
+.img {
+  width: 8em;
+  height: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid blue; */
+}
+
+.text h3 {
+  /* border: 1px solid salmon; */
+  text-align: center;
+}
+.text p {
+  /* border: 1px solid salmon; */
+  text-align: center;
+  color: #666666;
+  font-size: var(--body-fs);
+  line-height: var(--body-h3-h2-lh);
+}
