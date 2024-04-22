@@ -1,8 +1,8 @@
-import StoryCardSection from "../../components/StoryCardSection";
-import BannerSection from "../../components/BannerSection";
-import PageNav from "../../components/reusable/PageNav";
-import FeatureCardSection from "../../components/FeatureCardSection";
-import FooterSection from "../../components/reusable/FooterSection";
+import StoryCardSection from "../../components/multi/StoryCardSection";
+import BannerSection from "../../components/multi/BannerSection";
+import PageNav from "../../components/single/PageNav";
+import FooterSection from "../../components/single/FooterSection";
+import HomeFeatureCardSection from "../../components/multi/HomeFeatureCardSection";
 // import styles from "./Home.module.css";
 
 function Home() {
@@ -11,7 +11,7 @@ function Home() {
       <PageNav />
       <BannerSection />
       <StoryCardSection />
-      <FeatureCardSection />
+      <HomeFeatureCardSection />
       <FooterSection />
     </div>
   );

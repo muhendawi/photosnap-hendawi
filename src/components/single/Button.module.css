@@ -7,10 +7,12 @@
 }
 
 /* Shared ----------------------------------------*/
-.btn button {
+.button {
+  /* border: 1px solid salmon; */
   border: none;
   text-transform: uppercase;
-  padding: 0.8em 2em;
+  padding: 0.8em 2.2em;
+  margin-right: 0.5em;
   font-size: var(--h4-fs);
   font-weight: bold;
   cursor: pointer;
@@ -45,11 +47,15 @@
 /* transparent onWhite --------------------------------- */
 .transparent-onWhite-btn {
   color: var(--black);
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* transparent onBlack --------------------------------- */
 .transparent-onBlack-btn {
   color: var(--white);
+  padding-left: 0;
+  padding-right: 0;
 }
 .transparent-onWhite-btn:hover,
 .transparent-onBlack-btn:hover {

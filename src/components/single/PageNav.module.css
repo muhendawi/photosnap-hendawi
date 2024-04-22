@@ -8,9 +8,8 @@
   font-size: var(--h4-fs);
   letter-spacing: var(--h4-ls);
   font-weight: 600;
-  height: 6em;
-
-  margin: 0.2em;
+  height: 6.7em;
+  /* margin: 0.2em; */
 }
 .nav a {
   padding: 0.3em;

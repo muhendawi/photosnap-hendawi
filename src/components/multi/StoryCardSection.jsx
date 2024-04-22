@@ -1,10 +1,10 @@
 import styles from "./StoryCardSection.module.css";
-import { storyCardData } from "../data/storyCardData";
-import StoryCard from "./reusable/StoryCard";
+import { homeStoryCardData } from "../../data/homeStoryCardData";
+import StoryCard from "../single/StoryCard";
 function StoryCardSection() {
   return (
     <div className={styles.container}>
-      {storyCardData.map((cardData) => (
+      {homeStoryCardData.map((cardData) => (
         <StoryCard
           key={cardData.title}
           title={cardData.title}

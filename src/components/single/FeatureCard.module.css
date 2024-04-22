@@ -1,12 +1,12 @@
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
-  min-height: 18em;
-  max-width: 27em;
+  min-height: 15em;
+  max-width: 22vw;
   gap: 0.4em;
-  /* border: 1px solid salmon; */
+  /* border: 1px solid darkgreen; */
 }
 
 .img {
@@ -28,4 +28,18 @@
   color: #666666;
   font-size: var(--body-fs);
   line-height: var(--body-h3-h2-lh);
+}
+
+@media (max-width: 1070px) {
+  .card {
+    min-height: 20em;
+    max-width: 30vw;
+  }
+}
+
+@media (max-width: 838px) {
+  .card {
+    min-height: 20em;
+    max-width: 70vw;
+  }
 }

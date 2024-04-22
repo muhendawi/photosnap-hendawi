@@ -3,7 +3,7 @@ import cityscapes from "../assets/stories/desktop/cityscapes.jpg";
 import daysVoyage from "../assets/stories/desktop/18-days-voyage.jpg";
 import architecturals from "../assets/stories/desktop/architecturals.jpg";
 
-const storyCardData = [
+const homeStoryCardData = [
   {
     title: "The Mountains",
     author: "John Appleseed",
@@ -26,4 +26,4 @@ const storyCardData = [
   },
 ];
 
-export { storyCardData };
+export { homeStoryCardData };

@@ -1,5 +1,5 @@
-import { homeBannerData } from "../data/homeBannerData";
-import HomeBanner from "./reusable/HomeBanner";
+import { homeBannerData } from "../../data/homeBannerData";
+import HomeBanner from "../single/HomeBanner";
 
 function BannerSection() {
   return (
@@ -9,6 +9,7 @@ function BannerSection() {
           key={sectionData.title}
           title={sectionData.title}
           button={sectionData.button}
+          addButton={true}
           body={sectionData.body}
           image={sectionData.image}
           index={index}
