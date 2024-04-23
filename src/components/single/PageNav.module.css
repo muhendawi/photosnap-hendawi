@@ -9,6 +9,7 @@
   letter-spacing: var(--h4-ls);
   font-weight: 600;
   height: 6.7em;
+  position: relative;
   /* margin: 0.2em; */
 }
 .nav a {
@@ -24,7 +25,6 @@
 .nav a:hover {
   color: var(--grey);
 }
-
 .nav ul {
   display: flex;
   align-items: center;
@@ -33,10 +33,96 @@
   margin: 0;
   padding: 0;
 }
+/* MObile */
+.menuContainer {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  /* width: 100%; */
+}
 
+/* ======================================= */
+.innerMenu {
+  /* border: 2px solid orange; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2em;
+  padding: 0 2em 2em 2em;
+  width: 100%;
+}
+
+.innerMenu ul li {
+  list-style: none;
+}
+/* .innerMenu ul li a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+} */
+.innerMenu ul {
+  /* border: 2px solid salmon; */
+  padding-left: 0;
+  width: 100%;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  border-bottom: 2px solid rgba(37, 37, 37, 0.223);
+}
+.innerMenu ul li:last-child {
+  margin-bottom: 2em;
+}
+.innerMenu a:link,
+.innerMenu a:visited {
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--black);
+  text-transform: uppercase;
+}
+.innerMenu a:global(.active),
+.innerMenu a:hover {
+  color: var(--grey);
+}
+.innerMenu button {
+  margin: 0;
+  width: calc(100vw - 5em);
+  padding: 1em 0;
+}
+/* ======================================= */
+
+.hamburgerBtn {
+  display: none;
+}
+.innerMenu {
+  /* border: 2px solid salmon; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--white);
+  z-index: 3;
+}
 @media (max-width: 723px) {
   .nav ul,
   .nav button {
     display: none;
+  }
+  .menuContainerOn {
+    display: initial;
+  }
+  .menuContainerOff {
+    display: none;
+  }
+  .hamburgerBtn {
+    display: initial;
+    position: absolute;
+    top: 2em;
+    right: 8%;
+    /* padding: 1.5em 7%; */
   }
 }
