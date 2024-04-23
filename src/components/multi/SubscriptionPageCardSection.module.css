@@ -1,0 +1,35 @@
+.container {
+  /* border: 5px solid blue; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 6em 0;
+  gap: 2em;
+}
+
+.cardsContainer {
+  /* border: 5px solid salmon; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2em 4em;
+  gap: 2em;
+}
+
+.toggleBtn {
+  width: 10em;
+  height: 5em;
+  border: 3px solid blue;
+}
+
+@media (max-width: 1070px) {
+  .cardsContainer {
+    /* border: 5px solid blue; */
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em 3em;
+  }
+}

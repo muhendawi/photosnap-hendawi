@@ -1,0 +1,188 @@
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 21em;
+  height: 27em;
+  padding: 2.5em;
+  gap: 1em;
+  /* border: 1px solid salmon; */
+  background-color: #f5f5f5;
+}
+.subContainer h2 {
+  /* border: 1px solid salmon; */
+
+  font-size: calc(var(--h2-fs) + 0.3em);
+}
+.subContainer p {
+  /* border: 1px solid salmon; */
+
+  font-size: var(--h3-fs);
+  text-align: center;
+  color: var(--grey2);
+}
+.priceAndPeriod {
+  /* border: 1px solid salmon; */
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: var(--h1-ls);
+  /* gap: 0; */
+}
+.priceAndPeriod h1 {
+  /* border: 1px solid salmon; */
+  padding: 0;
+  margin: 0;
+  font-size: calc(var(--h1-fs) + 0.5em);
+}
+.priceAndPeriod p {
+  /* border: 1px solid salmon; */
+  margin-top: 0;
+  letter-spacing: initial;
+}
+
+.blackBgAndHeight {
+  /* border: 1px solid salmon; */
+  padding: 5em auto;
+  position: relative;
+  background-color: var(--black);
+  color: var(--white);
+  height: 32em;
+}
+
+.blackBgAndHeight p {
+  color: var(--grey3);
+}
+
+.blackBgAndHeight::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 0.4em;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    var(--main-accent-3) 5%,
+    var(--main-accent-2) 45%,
+    var(--main-accent-1) 90%
+  );
+}
+/* .blackBgAndHeight::after {
+  position: absolute;
+  content: "";
+  bottom: 4.9em;
+  height: 0.2em;
+  width: 300%;
+  background: linear-gradient(to bottom, rgb(81, 81, 81), rgb(81, 81, 81));
+} */
+
+.subContainer button {
+  border: none;
+  text-transform: uppercase;
+  padding: 1.1em;
+  width: 100%;
+  margin-top: 1.5em;
+  /* margin-right: 0.5em; */
+  font-size: var(--h4-fs);
+  font-weight: bold;
+  cursor: pointer;
+  background-color: transparent;
+  letter-spacing: var(--h4-ls);
+  text-wrap: nowrap;
+  justify-self: flex-end;
+}
+/* Black button ----------------------------------- */
+.container .black-btn {
+  background-color: var(--black);
+  color: var(--white);
+}
+.container .black-btn:hover {
+  background-color: var(--grey);
+  color: var(--black);
+}
+/* White button ----------------------------------- */
+.container .white-btn {
+  background-color: var(--white);
+  color: var(--black);
+}
+.container .white-btn:hover {
+  background-color: var(--grey);
+}
+
+@media (min-width: 1600px) {
+  .subContainer {
+    width: 30em;
+  }
+}
+@media (max-width: 1070px) {
+  .container {
+    width: 100%;
+  }
+  .subContainer {
+    position: relative;
+    /* border: 2px solid salmon; */
+    width: 100%;
+    height: 21em;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* padding: 2.5em; */
+  }
+  .priceAndPeriod {
+    position: absolute;
+    top: 2.5em;
+    right: 2.5em;
+    align-items: flex-end;
+  }
+  .priceAndPeriod p {
+    padding-right: 0.4em;
+  }
+  .blackBgAndHeight {
+    height: 21em;
+  }
+  .subContainer .size1070px {
+    max-width: 25em;
+  }
+  .subContainer > p {
+    text-align: start;
+    width: 19em;
+    margin-bottom: 1em;
+  }
+
+  .blackBgAndHeight::before {
+    left: 0;
+    height: 100%;
+    width: 0.4em;
+  }
+}
+@media (max-width: 723px) {
+  .subContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 21em;
+    height: 27em;
+    padding: 3em;
+    gap: 1em;
+    /* border: 1px solid salmon; */
+    background-color: #f5f5f5;
+  }
+  .blackBgAndHeight {
+    background-color: var(--black);
+  }
+  .priceAndPeriod {
+    position: initial;
+    align-items: center;
+  }
+  .subContainer > p {
+    /* align-items: center; */
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .subContainer button {
+    margin-bottom: 1.5em;
+  }
+}
