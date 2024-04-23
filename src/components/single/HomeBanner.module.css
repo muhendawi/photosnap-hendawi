@@ -2,7 +2,7 @@
   display: flex;
   align-items: stretch;
   color: var(--black);
-  height: 40em;
+  height: 35em;
 }
 
 .sharedText {
