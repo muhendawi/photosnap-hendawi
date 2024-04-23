@@ -24,6 +24,8 @@
   letter-spacing: var(--h1-ls);
 }
 .sharedText .innerInner {
+  /* border: 1px solid salmon; */
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -97,7 +99,17 @@ background */
     var(--main-accent-1) 90%
   );
 }
-
+@media (max-width: 1070px) {
+  .sharedText {
+    min-width: 35em;
+  }
+  .imageContainer {
+    flex: 1 0 20em;
+  }
+  /* .innerInner {
+    max-width: 25em;
+  } */
+}
 @media (max-width: 723px) {
   .shared {
     flex-direction: column;
