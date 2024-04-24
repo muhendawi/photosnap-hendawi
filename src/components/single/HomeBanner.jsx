@@ -41,7 +41,10 @@ function HomeBanner({
                   arrow={true}
                   arrowColor={button[0] === "transparent-onBlack-btn" && "#fff"}
                   onClick={() => {
-                    if (button[1] === "get an invite") setIsModal(true);
+                    if (button[1] === "get an invite") {
+                      setIsModal(true);
+                      document.body.style.overflow = "hidden";
+                    }
                   }}
                 >
                   {button[1]}

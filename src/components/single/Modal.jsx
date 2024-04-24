@@ -6,13 +6,19 @@ function Modal({ setIsModal }) {
     <div className={styles.container}>
       <div
         className={styles.modalBackdrop}
-        onClick={() => setIsModal(false)}
+        onClick={() => {
+          setIsModal(false);
+          document.body.style.overflow = "auto";
+        }}
       ></div>
       <div className={styles.modal}>
         <IoClose
           className={styles.closeBtn}
           size={30}
-          onClick={() => setIsModal(false)}
+          onClick={() => {
+            setIsModal(false);
+            document.body.style.overflow = "auto";
+          }}
         />
         <h1>Under Construction 🚧</h1>
       </div>

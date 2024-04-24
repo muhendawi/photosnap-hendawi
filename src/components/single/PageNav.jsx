@@ -26,13 +26,19 @@ function PageNav() {
         <Button type="black-btn">Get an invite</Button>
         {isMenuOn ? (
           <IoCloseOutline
-            onClick={() => setMenu(!isMenuOn)}
+            onClick={() => {
+              setMenu(!isMenuOn);
+              document.body.style.overflow = "auto";
+            }}
             className={styles.hamburgerBtn}
             size={40}
           />
         ) : (
           <RxHamburgerMenu
-            onClick={() => setMenu(!isMenuOn)}
+            onClick={() => {
+              setMenu(!isMenuOn);
+              document.body.style.overflow = "hidden";
+            }}
             className={styles.hamburgerBtn}
             size={35}
           />
@@ -42,7 +48,10 @@ function PageNav() {
         className={`${styles.backdrop} ${
           isMenuOn ? styles.backdropOn : styles.backdropOff
         }`}
-        onClick={() => setMenu(!isMenuOn)}
+        onClick={() => {
+          setMenu(!isMenuOn);
+          document.body.style.overflow = "auto";
+        }}
       ></div>
       <div
         className={`${styles.menuContainer} ${
