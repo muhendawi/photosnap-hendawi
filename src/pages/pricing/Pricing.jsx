@@ -3,6 +3,7 @@ import PageNav from "../../components/single/PageNav";
 import { pricingBannerData } from "../../data/pricingPageData";
 import FooterSection from "../../components/single/FooterSection";
 import SubscriptionPageCardSection from "../../components/multi/SubscriptionPageCardSection";
+import PreFooterHero from "../../components/multi/PreFooterHero";
 
 function Pricing() {
   return (
@@ -15,6 +16,7 @@ function Pricing() {
         button={pricingBannerData.button}
       />
       <SubscriptionPageCardSection />
+      <PreFooterHero />
       <FooterSection />
       {/* <SubscriptionCard
         title={subCardData[0].title}

@@ -39,7 +39,7 @@
 
 @media (max-width: 838px) {
   .card {
-    min-height: 20em;
+    /* min-height: 20em; */
     max-width: 70vw;
   }
 }

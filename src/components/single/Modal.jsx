@@ -6,7 +6,7 @@ function Modal({ setIsModal }) {
     <div className={styles.container}>
       <div
         className={styles.modalBackdrop}
-        // onClick={() => setIsModal(false)}
+        onClick={() => setIsModal(false)}
       ></div>
       <div className={styles.modal}>
         <IoClose
@@ -14,7 +14,7 @@ function Modal({ setIsModal }) {
           size={30}
           onClick={() => setIsModal(false)}
         />
-        <h1>Modal is Under Construction</h1>
+        <h1>Under Construction 🚧</h1>
       </div>
     </div>
   );

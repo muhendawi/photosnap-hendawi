@@ -64,4 +64,10 @@
     font-size: 2.5em;
     letter-spacing: 3px;
   }
+  .container::before {
+    top: 0;
+    left: 10vw;
+    height: 0.6em;
+    width: 35%;
+  }
 }

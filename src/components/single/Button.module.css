@@ -61,3 +61,18 @@
 .transparent-onBlack-btn:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 838px) {
+  .transparent-onWhite-btn:hover,
+  .transparent-onBlack-btn:hover {
+    text-decoration: none;
+  }
+  .hover:hover {
+    margin-right: 0;
+    gap: 0.7em;
+  }
+  .btn:hover {
+    position: relative;
+    top: 5px;
+  }
+}
