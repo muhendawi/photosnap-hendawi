@@ -2,7 +2,8 @@
   display: flex;
   align-items: stretch;
   color: var(--black);
-  height: 35em;
+  height: 40em;
+  width: 100%;
 }
 
 .sharedText {
@@ -14,7 +15,7 @@
   gap: 1rem;
   padding: 0 4em;
   flex: 0 0 35%;
-  min-width: 26rem;
+  min-width: 30rem;
 }
 .sharedText h1 {
   margin: 0;
@@ -39,7 +40,7 @@
   padding: 0;
 }
 .imageContainer {
-  flex: 1 0 25em;
+  flex: 1 0 30em;
 }
 
 .imageContainer img {
@@ -101,10 +102,10 @@ background */
 }
 @media (max-width: 1070px) {
   .sharedText {
-    min-width: 35em;
+    min-width: 67%;
   }
   .imageContainer {
-    flex: 1 0 20em;
+    flex: 1 0 33%;
   }
   /* .innerInner {
     max-width: 25em;
