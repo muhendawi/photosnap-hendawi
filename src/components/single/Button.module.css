@@ -20,6 +20,10 @@
   letter-spacing: var(--h4-ls);
   text-wrap: nowrap;
 }
+.button:active {
+  outline: none;
+  box-shadow: none;
+}
 
 .hover:hover {
   margin-right: -15px;
