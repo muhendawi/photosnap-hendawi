@@ -6,7 +6,7 @@ const homeBannerData = [
   {
     title: "Create and share your photo Stories",
     body: "Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.",
-    button: ["transparent-onBlack-btn", "Get an invite"],
+    button: ["transparent-onBlack-btn", "get an invite"],
     image: createAndShare,
   },
   {

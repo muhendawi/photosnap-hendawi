@@ -30,10 +30,16 @@ function PageNav() {
         />
       </nav>
       <div
+        className={`${styles.backdrop} ${
+          isMenuOn ? styles.backdropOn : styles.backdropOff
+        }`}
+      ></div>
+      <div
         className={`${styles.menuContainer} ${
           isMenuOn ? styles.menuContainerOn : styles.menuContainerOff
         }`}
       >
+        {" "}
         <div className={styles.innerMenu}>
           <ul>
             <li>
