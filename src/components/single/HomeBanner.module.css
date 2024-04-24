@@ -91,9 +91,9 @@ background */
   position: absolute;
   content: "";
   top: 0;
-  left: -4.2em;
+  left: -4em;
   height: 100%;
-  width: 0.5em;
+  width: 0.4em;
   background: linear-gradient(
     to bottom,
     var(--main-accent-3) 5%,
