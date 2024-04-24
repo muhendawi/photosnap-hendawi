@@ -2,7 +2,7 @@
   display: flex;
   align-items: stretch;
   color: var(--black);
-  height: 40em;
+  height: 38em;
   width: 100%;
 }
 
@@ -40,6 +40,7 @@
   padding: 0;
 }
 .imageContainer {
+  width: 100%;
   flex: 1 0 30em;
 }
 
@@ -102,7 +103,7 @@ background */
 }
 @media (max-width: 1070px) {
   .sharedText {
-    min-width: 67%;
+    min-width: 60%;
   }
   .imageContainer {
     flex: 1 0 33%;
