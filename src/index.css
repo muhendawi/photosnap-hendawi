@@ -42,6 +42,7 @@ html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
+  width: 100%;
 }
 
 /* Remove default margin in favour of better control in authored CSS */
@@ -67,6 +68,7 @@ ol[role="list"] {
 /* Set core body defaults */
 body {
   font-family: var(--main-font);
+  width: 100%;
   min-height: 100vh;
   line-height: 1.5;
   margin: 0;
