@@ -28,13 +28,14 @@
   display: flex;
   flex-direction: column;
   letter-spacing: var(--h1-ls);
+
   /* gap: 0; */
 }
 .priceAndPeriod h1 {
   /* border: 1px solid salmon; */
   padding: 0;
   margin: 0;
-  font-size: calc(var(--h1-fs) + 0.5em);
+  font-size: calc(var(--h1-fs) + 0.5vw);
 }
 .priceAndPeriod p {
   /* border: 1px solid salmon; */

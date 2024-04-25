@@ -18,11 +18,65 @@
   padding: 2em 4em;
   gap: 2em;
 }
+.toggleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  color: #d3d3d3;
+}
 
-.toggleBtn {
-  width: 10em;
-  height: 5em;
-  border: 3px solid blue;
+.toggleContainer h3 {
+  font-size: 1.3em;
+  transition: 0.4s;
+}
+.selectedBlack {
+  color: black;
+}
+.toggleBtn label {
+  /* border: 2px solid salmon; */
+  width: 5.9em;
+  height: 2.5em;
+  position: relative;
+  display: block;
+  background-color: #d3d3d3;
+  border-radius: 3em;
+  /* box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4); */
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* We didn't do display: none, because we need the input functionality */
+.toggleBtn input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+.toggleBtn label::after {
+  content: "";
+  position: absolute;
+  width: 1.9em;
+  height: 1.9em;
+  top: 0.3em;
+  left: 0.3em;
+  border-radius: 2em;
+  background-color: var(--black);
+  transition: 0.3s;
+}
+
+.toggleBtn input:checked + label {
+  background-color: var(--black);
+}
+
+.toggleBtn input:checked + label::after {
+  left: 5.6em;
+  transform: translateX(-100%);
+  background-color: #d3d3d3;
+}
+
+.toggleBtn label:active:after {
+  width: 2.8em;
 }
 
 @media (max-width: 1070px) {
@@ -30,6 +84,18 @@
     /* border: 5px solid blue; */
     flex-direction: column;
     justify-content: center;
-    padding: 2em 3em;
+    padding: 2em 1.5em;
+  }
+}
+
+@media (max-width: 723px) {
+  .container {
+    gap: 1.5em;
+  }
+  .toggleContainer {
+    gap: 1em;
+  }
+  .toggleContainer h3 {
+    font-size: 1.2em;
   }
 }
