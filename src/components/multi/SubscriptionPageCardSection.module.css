@@ -24,9 +24,11 @@
   align-items: center;
   gap: 2em;
   color: #d3d3d3;
+}
+.toggleContainer:active {
+  outline: none;
   touch-action: none;
 }
-
 .toggleContainer h3 {
   font-size: 1.3em;
   transition: 0.4s;
