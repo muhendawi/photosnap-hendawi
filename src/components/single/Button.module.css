@@ -19,6 +19,7 @@
   background-color: transparent;
   letter-spacing: var(--h4-ls);
   text-wrap: nowrap;
+  touch-action: none;
 }
 .button:active {
   background-color: transparent;
