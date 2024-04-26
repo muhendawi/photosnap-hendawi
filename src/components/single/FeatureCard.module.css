@@ -18,6 +18,10 @@
   /* border: 1px solid blue; */
 }
 
+.img:hover {
+  transform: rotate(-360deg);
+  transition: 1s;
+}
 .text h3 {
   /* border: 1px solid salmon; */
   text-align: center;

@@ -9,7 +9,7 @@ import { useState } from "react";
 function PageNav() {
   const [isMenuOn, setMenu] = useState(false);
   return (
-    <>
+    <div className={styles.mainContainer}>
       <nav className={styles.nav}>
         <Logo />
         <ul>
@@ -66,7 +66,7 @@ function PageNav() {
           <Button type="black-btn">Get an invite</Button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
