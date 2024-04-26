@@ -3,9 +3,8 @@ import styles from "./Button.module.css";
 
 function Button({ children, onClick, type, arrow = false, arrowColor }) {
   return (
-    <div className={`${styles.btn} ${arrow && styles.hover}`}>
+    <div className={`${styles.btn} ${arrow && styles.hover}`} onClick={onClick}>
       <button
-        onClick={onClick}
         className={`
       ${styles[type]} ${styles.button}`}
       >

@@ -36,6 +36,7 @@
   text-decoration: none;
   color: var(--grey);
   text-transform: uppercase;
+  transition: 0.3s;
 }
 
 .navLinks a:global(.active),

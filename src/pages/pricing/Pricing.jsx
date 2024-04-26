@@ -4,6 +4,7 @@ import { pricingBannerData } from "../../data/pricingPageData";
 import FooterSection from "../../components/single/FooterSection";
 import SubscriptionPageCardSection from "../../components/multi/SubscriptionPageCardSection";
 import PreFooterHero from "../../components/multi/PreFooterHero";
+import SubscriptionTableFeature from "../../components/multi/SubscriptionTableFeature";
 
 function Pricing() {
   return (
@@ -16,6 +17,7 @@ function Pricing() {
         button={pricingBannerData.button}
       />
       <SubscriptionPageCardSection />
+      <SubscriptionTableFeature />
       <PreFooterHero />
       <FooterSection />
       {/* <SubscriptionCard

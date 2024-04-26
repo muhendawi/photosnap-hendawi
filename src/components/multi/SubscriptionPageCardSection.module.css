@@ -79,7 +79,7 @@
 }
 
 .toggleBtn label:active:after {
-  width: 2.8em;
+  width: 3.5em;
 }
 
 @media (max-width: 1070px) {

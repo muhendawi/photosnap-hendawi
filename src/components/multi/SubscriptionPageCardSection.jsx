@@ -6,7 +6,7 @@ import { useState } from "react";
 function SubscriptionPageCardSection() {
   const [data, setData] = useState(subCardData);
   const [isToggled, setIsToggled] = useState(true);
-  console.log(data);
+
   function handleToggling() {
     setIsToggled(!isToggled);
     const subscriptions = data.map((cardData) => {
@@ -33,12 +33,12 @@ function SubscriptionPageCardSection() {
           isToggled ? styles.selectMonthly : styles.selectYearly
         }`}
       >
-        <h3 className={isToggled && styles.selectedBlack}>Monthly</h3>
+        <h3 className={isToggled ? styles.selectedBlack : ""}>Monthly</h3>
         <div className={styles.toggleBtn}>
           <input type="checkbox" id="toggle-btn" onChange={handleToggling} />
           <label htmlFor="toggle-btn"></label>
         </div>
-        <h3 className={!isToggled && styles.selectedBlack}>Yearly</h3>
+        <h3 className={!isToggled ? styles.selectedBlack : ""}>Yearly</h3>
       </div>
       <div className={styles.cardsContainer}>
         {data.map((cardData) => (

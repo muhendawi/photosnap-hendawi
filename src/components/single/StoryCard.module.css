@@ -9,6 +9,7 @@
   /* border: 1px solid salmon; */
   flex: 1 0 auto;
   color: var(--white);
+  transition: 0.3s;
 }
 /* The next before psuedo element is for applying 
 gradient above an HTML img tag */
@@ -28,7 +29,8 @@ gradient above an HTML img tag */
 
 .card:hover {
   /* border-bottom: 1em; */
-  bottom: 2em;
+  /* bottom: 2em; */
+  transform: translateY(-2em);
   cursor: pointer;
 }
 .card:hover::after {
