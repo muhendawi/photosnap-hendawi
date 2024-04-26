@@ -1,5 +1,5 @@
 .container {
-  border: 5px solid rgb(128, 128, 128);
+  /* border: 2px solid blue; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,6 +9,7 @@
   gap: 3em;
   padding-bottom: 6em;
   text-transform: uppercase;
+  width: 100%;
 }
 .container h1 {
   font-size: calc(var(--h1-fs) + 0.5em);
@@ -16,8 +17,8 @@
   /* text-shadow: 1px 1px 0.5px #777777; */
 }
 .container table {
-  width: 50em;
-  height: 38em;
+  width: 60em;
+  min-height: 38em;
   border-collapse: collapse;
 }
 .container table tr {
@@ -37,16 +38,44 @@
 }
 .container table tr th:first-child {
   text-align: start;
-  padding-left: 0;
+  /* padding-left: 0; */
 }
-.onForMobile {
+
+.mobileTable {
   display: none;
 }
 @media (max-width: 1070px) {
   .container table {
-    width: 80%;
+    width: 80vw;
   }
 }
 
 @media (max-width: 723px) {
+  .container h1 {
+    display: none;
+  }
+  .desktopTable {
+    display: none;
+  }
+  .mobileTable {
+    /* border: 1px solid salmon; */
+    display: initial;
+  }
+  .container td,
+  .container th {
+    width: 28vw;
+    padding: 1em 0;
+    border-bottom: none;
+    text-align: start;
+  }
+
+  .checkMarksRow td {
+    padding-top: 0;
+    border-bottom: 2px solid #d3d3d3;
+  }
+  .mobileHeads td {
+    padding-bottom: 0;
+    color: #979797;
+    font-size: 0.8em;
+  }
 }
