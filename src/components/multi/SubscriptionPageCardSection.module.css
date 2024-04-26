@@ -94,6 +94,7 @@
 @media (max-width: 723px) {
   .container {
     gap: 1.5em;
+    padding: 2.5em 0;
   }
   .toggleContainer {
     gap: 1em;
