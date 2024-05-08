@@ -11,7 +11,9 @@ function BannerSection() {
           button={sectionData.button}
           addButton={true}
           body={sectionData.body}
-          image={sectionData.image}
+          imageDesktop={sectionData.imageDesktop}
+          imageTablet={sectionData.imageTablet}
+          imageMobile={sectionData.imageMobile}
           index={index}
         />
       ))}

@@ -4,12 +4,16 @@ import embed from "../assets/features/desktop/embed.svg";
 import customDomain from "../assets/features/desktop/custom-domain.svg";
 import dragNdrop from "../assets/features/desktop/drag-drop.svg";
 import boostExposure from "../assets/features/desktop/boost-exposure.svg";
-import hero from "../assets/features/desktop/hero.jpg";
+import heroDesktop from "../assets/features/desktop/hero.jpg";
+import heroTablet from "../assets/features/tablet/hero.jpg";
+import heroMobile from "../assets/features/mobile/hero.jpg";
 
 const featureBannerData = {
   title: "Features",
   body: "We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories.",
-  image: hero,
+  imageDesktop: heroDesktop,
+  imageTablet: heroTablet,
+  imageMobile: heroMobile,
   button: ["transparent-onBlack-btn", "Get an invite"],
 };
 const featurePageData = [

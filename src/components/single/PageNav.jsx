@@ -12,7 +12,7 @@ function PageNav() {
     <div className={styles.mainContainer}>
       <nav className={styles.nav}>
         <Logo />
-        <ul>
+        <ul autoFocus>
           <li>
             <NavLink to="/stories">Stories</NavLink>
           </li>

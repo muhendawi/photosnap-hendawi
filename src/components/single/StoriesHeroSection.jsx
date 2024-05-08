@@ -16,7 +16,12 @@ function StoriesHeroSection() {
           read the story
         </Button>
       </div>
-      <img src={heroData.image} alt={heroData.title} />
+      <picture>
+        <source srcSet={heroData.imageMoile} media="(max-width: 723px)" />
+        <source srcSet={heroData.imageTablet} media="(max-width: 1070px)" />
+        <img src={heroData.imageDesktop} alt="Image" />
+      </picture>
+      {/* <img src={heroData.image} alt={heroData.title} /> */}
     </main>
   );
 }

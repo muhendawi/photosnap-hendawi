@@ -8,7 +8,9 @@ function HomeBanner({
   button,
   addButton = false,
   body,
-  image,
+  imageDesktop,
+  imageTablet,
+  imageMobile,
   index = 0,
 }) {
   const [isModal, setIsModal] = useState(false);
@@ -54,9 +56,11 @@ function HomeBanner({
             )}
           </div>
         </div>
-        <div className={styles.imageContainer}>
-          <img src={image} alt="justImg" />
-        </div>
+        <picture className={styles.imageContainer}>
+          <source srcSet={imageMobile} media="(max-width: 723px)" />
+          <source srcSet={imageTablet} media="(max-width: 1070px)" />
+          <img src={imageDesktop} alt="Image" />
+        </picture>
       </section>
       {isModal && <Modal setIsModal={setIsModal} />}
     </>

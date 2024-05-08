@@ -1,9 +1,13 @@
-import hero from "../assets/pricing/desktop/hero.jpg";
+import heroDesktop from "../assets/pricing/desktop/hero.jpg";
+import heroTablet from "../assets/pricing/tablet/hero.jpg";
+import heroMobile from "../assets/pricing/mobile/hero.jpg";
 
 const pricingBannerData = {
   title: "Pricing",
   body: "Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.",
-  image: hero,
+  imageDesktop: heroDesktop,
+  imageTablet: heroTablet,
+  imageMobile: heroMobile,
   button: ["transparent-onBlack-btn", "Get an invite"],
 };
 

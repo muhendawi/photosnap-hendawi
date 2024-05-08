@@ -5,21 +5,17 @@ import FooterSection from "../../components/single/FooterSection";
 import SubscriptionPageCardSection from "../../components/multi/SubscriptionPageCardSection";
 import PreFooterHero from "../../components/multi/PreFooterHero";
 import SubscriptionTableFeature from "../../components/multi/SubscriptionTableFeature";
-import { useEffect } from "react";
 
 function Pricing() {
-  /* Using to useEffect to open the page at the top by scrolling to 
-  (0,0) coordination */
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   return (
     <div>
       <PageNav />
       <HomeBanner
         title={pricingBannerData.title}
         body={pricingBannerData.body}
-        image={pricingBannerData.image}
+        imageDesktop={pricingBannerData.imageDesktop}
+        imageTablet={pricingBannerData.imageTablet}
+        imageMobile={pricingBannerData.imageMobile}
         button={pricingBannerData.button}
       />
       <SubscriptionPageCardSection />

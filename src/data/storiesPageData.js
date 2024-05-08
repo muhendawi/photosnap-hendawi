@@ -14,7 +14,9 @@ import somewarpet from "../assets/stories/desktop/somwarpet.jpg";
 import tripToNowhere from "../assets/stories/desktop/trip-to-nowhere.jpg";
 import unforeseenCorners from "../assets/stories/desktop/unforeseen-corners.jpg";
 import worldTour from "../assets/stories/desktop/world-tour.jpg";
-import moon from "../assets/stories/desktop/moon-of-appalacia.jpg";
+import moonDesktop from "../assets/stories/desktop/moon-of-appalacia.jpg";
+import moonTablet from "../assets/stories/tablet/moon-of-appalacia.jpg";
+import moonMobile from "../assets/stories/mobile/moon-of-appalacia.jpg";
 
 const storiesPageData = [
   {
@@ -121,7 +123,9 @@ const heroData = {
   date: "March 2nd 2020",
   author: "John Appleseed",
   body: 'The dissected plateau area, while not actually made up of geological mountains, is popularly called "mountains," especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged.',
-  image: moon,
+  imageDesktop: moonDesktop,
+  imageTablet: moonTablet,
+  imageMoile: moonMobile,
 };
 
 export { storiesPageData, heroData };
